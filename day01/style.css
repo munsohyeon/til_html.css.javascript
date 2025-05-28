@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,
+h1,
+button {
+  all: unset;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #faf0ca;
+}
+
+.stopwatch {
+  display: inline-block;
+  padding: 60px 45px;
+  background-color: #195083;
+  border: 1px solid #c8d9e6;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.stopwatch h1 {
+  display: block;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ee964b;
+  margin-bottom: 10px;
+}
+.stopwacth_interface {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#screen {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #195083;
+  background-color: #faf0ca;
+  border-radius: 5px;
+}
+#button {
+  display: flex;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ee964b;
+  border-radius: 5px;
+}

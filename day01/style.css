@@ -29,34 +29,43 @@ body {
 .stopwatch h1 {
   display: block;
   font-family: "Jersey 10", sans-serif;
+  letter-spacing: 3px;
   font-size: 50px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #ee964b;
+  color: #fcc40d;
   margin-bottom: 10px;
 }
 .stopwacth_interface {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
+}
+#button.stop-color {
+  background-color: tomato;
+}
+.play-color {
+  background-color: steelblue;
 }
 #screen {
   display: flex;
-  padding: 10px;
   align-items: center;
+  padding: 12px 30px;
+  width: 130px;
   font-family: "Jersey 10", sans-serif;
+  letter-spacing: 3px;
   font-size: 40px;
   font-weight: 500;
   color: #195083;
   background-color: #faf0ca;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 #button {
   display: flex;
-  padding: 15px 20px;
-  font-size: 20px;
+  padding: 13px 20px;
+  font-size: 30px;
   font-weight: 500;
   color: #fff;
-  background-color: #ee964b;
-  border-radius: 5px;
+  background-color: steelblue;
+  border-radius: 50px;
 }

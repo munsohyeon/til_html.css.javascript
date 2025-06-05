@@ -48,6 +48,7 @@ ol li:last-child {
   border: 1.5px dashed;
   border-radius: 5px;
 }
+/* outer 밑에 직속으로 된 last child를 제외하구 전부 */
 .outer > :not(:last-child) {
   color: rgb(79, 60, 47);
 }
@@ -61,9 +62,11 @@ ol :nth-child(3) {
   color: rgb(255, 202, 29);
 }
 
+/* even 짝수 번째 있는 자식들 전부 */
 ol :nth-child(even) {
   background-color: rgb(255, 202, 29, 0.1);
 }
+/* odd 홀수 번째 있는 자식들 전부 */
 ol :nth-child(odd) {
   background-color: rgb(79, 60, 47, 0.1);
 }

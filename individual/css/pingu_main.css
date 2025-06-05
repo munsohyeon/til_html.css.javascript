@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "HakgyoansimDunggeunmisoTTF-B";
+  font-weight: 700;
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2")
+    format("woff2");
+  font-style: normal;
+}
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "HakgyoansimDunggeunmisoTTF-B";
+  background: linear-gradient(white, rgb(37, 150, 255));
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #023e8a;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* main img {
+  justify-content: center;
+  height: 300px;
+  padding: 10px 10px;
+  border-radius: 30px;
+  width: 400px;
+} */
+.comic-container {
+  display: grid;
+  max-width: 960px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr); /* 3컷씩 가로 배치 */
+  gap: 15px;
+}
+
+.comic-panel {
+  padding: 5px;
+  background: #fff;
+  border: 3px solid steelblue;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(4, 0, 37, 0.3);
+}
+
+.comic-panel img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.caption {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+.hero img {
+  display: block;
+  margin: auto;
+}

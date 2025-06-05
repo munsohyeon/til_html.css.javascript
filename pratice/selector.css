@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "HakgyoansimAllimjangTTF-B";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimAllimjangTTF-B.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "HakgyoansimAllimjangTTF-B";
+  line-height: 30px;
+}
+span {
+  color: lightgoldenrodyellow;
+}
+span {
+  color: lightcoral;
+}
+
+div {
+  color: lightpink;
+}
+#red {
+  color: lightblue;
+}
+div.blue {
+  color: lightseagreen;
+}
+div.blue .dark {
+  color: lightsalmon;
+}
+.blue.dark {
+  color: lightsteelblue;
+}
+.blue {
+  color: lightslategray;
+}
+/*,(콤마) 그룹 */
+span,
+.dark,
+#red {
+  text-decoration: underline;
+}

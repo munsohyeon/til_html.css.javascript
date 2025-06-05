@@ -27,7 +27,10 @@ h1 + p {
   padding: 5px;
   border-radius: 10px;
   color: #000;
-} /*인접 형제 선택자 (adjace)*/
+
+} 
+/*인접 형제 선택자 (adjace)*/
+/* ~: h1 옆에 있는 p만 선택 */
 h1 ~ p {
   color: lightgreen;
 }

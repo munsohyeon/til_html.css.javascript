@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "HakgyoansimDunggeunmisoTTF-B";
+  font-weight: 700;
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2")
+    format("woff2");
+  font-style: normal;
+}
+html {
+  position: absolute;
+}
+footer {
+  position: relative;
+  padding: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #666;
+  background-color: #f1f1f1;
+  margin-top: 50px;
+}

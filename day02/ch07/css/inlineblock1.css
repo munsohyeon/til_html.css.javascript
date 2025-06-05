@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "RiaSans-ExtraBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: black;
+  font-family: "RiaSans-ExtraBold";
+  color: aliceblue;
+}
+
+ul > li {
+  display: inline;
+  padding: 5px 15px;
+  margin: 20px;
+  background-color: lightgreen;s
+}
+
+.class01 > :not(:last-child) {
+  margin-right: 2em;
+}
+
+.class02 > :not(:last-child) {
+  margin-right: 2em;
+}

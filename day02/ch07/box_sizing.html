@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container01 {
+        background-color: lightblue;
+      }
+      .container01 > div,
+      .container02 > div {
+        width: 100px;
+        height: 100px;
+        padding: 40ps;
+        background-color: lightcyan;
+        border: 1px dotted lightslategray;
+      }
+      .container02 > div {
+        box-sizing: border-box;
+      }
+      .container02 {
+        background-color: lightgoldenrodyellow;
+        margin-top: 2rem;
+      }
+      .container02 > div {
+        width: 100px;
+        height: 100px;
+        padding: 40ps;
+        background-color: lightpink;
+        border: 1px dotted lightcoral;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container01">
+      <div>div1</div>
+      <div>div2</div>
+      <div>div3</div>
+    </div>
+
+    <div class="container02">
+      <div>div1</div>
+      <div>div2</div>
+      <div>div3</div>
+    </div>
+  </body>
+</html>

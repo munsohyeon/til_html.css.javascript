@@ -14,13 +14,12 @@
         */
       .container {
         background-color: lightslategray;
+        width: 600px;
         height: 400px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        flex-wrap: wrap;
-        align-content: space-between;
-        /* align-items: flex-start; */
+        gap: 20px;
       }
       .container > div {
         background-color: steelblue;
@@ -30,35 +29,23 @@
         min-height: 48px;
         border: 1px solid #fff;
       }
+      .container > div:first-child {
+        background-color: lightskyblue;
+        flex-grow: 2;
+      }
+      .container > div:nth-child {
+        background-color: lightseagreen;
+        flex-grow: 2;
+      }
     </style>
   </head>
   <body>
     <h1>flex-sutdy.html</h1>
     <div class="container">
+      <div>이걸 조절해보던지 흥칫뿡</div>
       <div>1</div>
       <div>2</div>
       <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
-      <div>9</div>
-      <div>10</div>
-      <div>11</div>
-      <div>12</div>
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
-      <div>9</div>
-      <div>10</div>
-      <div>11</div>
-      <div>12</div>
     </div>
     <span>집 보내주세욥</span>
   </body>

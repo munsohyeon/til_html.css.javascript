@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Ownglyph_corncorn-Rg";
+  font-weight: normal;
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2")
+    format("woff2");
+  font-style: normal;
+}
+body {
+  font-family: "Ownglyph_corncorn-Rg";
+  background-color: rgb(99, 51, 7);
+}
+h1 {
+  margin: 5px;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: beige;
+}
+img {
+  margin: 0px 0px 10px 0px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.nemo {
+  padding: 15px;
+  font-weight: 500;
+  background-color: beige;
+  border-radius: 30px;
+}
+.other li {
+  color: chocolate;
+} /* 하위 선택자 (descendant selector) */
+.outer li {
+  color: rgb(99, 51, 7);
+} /* 자식 선택자 (child selector)*/
+.outer > li li {
+  color: rgb(79, 60, 47);
+}
+ol li:first-child,
+ol li:last-child {
+  color: darkgoldenrod;
+}
+.outer > li:last-child {
+  display: flow-root;
+  padding: 2px;
+  color: (255, 218, 162);
+  border: 1.5px dashed;
+  border-radius: 5px;
+}
+/* outer 밑에 직속으로 된 last child를 제외하구 전부 */
+.outer > :not(:last-child) {
+  color: rgb(79, 60, 47);
+}
+
+ul:not(.other) li {
+  font-weight: bold;
+}
+
+ol :nth-child(3) {
+  font-weight: bold;
+  color: rgb(255, 202, 29);
+}
+
+/* even 짝수 번째 있는 자식들 전부 */
+ol :nth-child(even) {
+  background-color: rgb(255, 202, 29, 0.1);
+}
+/* odd 홀수 번째 있는 자식들 전부 */
+ol :nth-child(odd) {
+  background-color: rgb(79, 60, 47, 0.1);
+}

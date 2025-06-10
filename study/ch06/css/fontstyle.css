@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "GongGothicMedium";
+  font-weight: normal;
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+    format("woff");
+  font-style: normal;
+}
+body {
+  font-family: "GongGothicMedium";
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: aliceblue;
+  background-color: black;
+}
+h1 {
+  font-size: 50px;
+}
+div {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 900;
+  font-style: italic;
+}
+img {
+  margin: 5px;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 400px;
+  height: 400px;
+}
+html {
+  font-size: 16px;
+}
+.font-rem {
+  font-size: 1.2rem;
+}
+.all {
+  line-height: 30px;
+}

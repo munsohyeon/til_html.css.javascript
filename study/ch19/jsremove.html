@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./jsselect.css" />
+  </head>
+  <body>
+    <h1>장보기 목록</h1>
+    <section class="plant">
+      <h2 id="vegetable_title"><i>채소</i></h2>
+      <ul>
+        <li>당근🥕</li>
+        <li>오이🥒</li>
+        <li class="soldout">양파🧅</li>
+      </ul>
+    </section>
+    <section id="sweets" class="plant">
+      <h2>과일</h2>
+      <ul>
+        <li>사과🍎</li>
+        <li>딸기🍓</li>
+        <li>포도🍇</li>
+      </ul>
+    </section>
+    <section class="plant" id="meat">
+      <h2>고기</h2>
+      <ul>
+        <li class="soldout">소고기🥩</li>
+        <li>돼지고기🥓</li>
+        <li class="soldout">닭고기🍗</li>
+      </ul>
+    </section>
+    </div>
+    <script>
+      const $vegetableTitle = document.querySelector('#vegetable_title');
+      $vegetableTitle.remove();
+      console.log('$vegetableTitle: ', $vegetableTitle);
+
+      // const $firstsection = document.querySelector('section');
+      // $firstsection.prepend($vegetableTitle); --> 다시 추가
+
+      const $selfH2Tag = document.createElement('h2');
+      $selfH2Tag.textContent = '내가 만든 쿠키🍪';
+
+      const $secondSetion = document.querySelector('#sweets');
+      $secondSetion.prepend($vegetableTitle);
+
+      //$secondSection.removeChild();
+      $secondSetion.children[0].remove();
+
+      const $meatUi = document.querySelector('#meat > ul')
+      console.log($meatUi.children);
+
+      // $meat_li_list = document.querySelectorAll('#meat > ul > li');
+      // for(const item of $meat_li_list) {
+      //   item.remove();
+      // }
+
+      // while($meatUi.children[0]) {
+      //   $meatUi.children[0].remove();
+      // }
+    </script>
+  </body>
+</html>

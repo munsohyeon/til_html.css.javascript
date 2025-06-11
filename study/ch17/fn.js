@@ -11,7 +11,11 @@ function sum(n1, n2) {
   console.log(`${n1} + ${n2} = ${n1 + n2}`);
 }
 
+console.log('void함수: ', sum(10, 20));
+
 sum(1, 2);
+sum(5, 6, 7);
+sum(5);
 
 const copySum = sum;
 copySum(1, 2);

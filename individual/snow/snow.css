@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0074D9);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 30vh;
+  }
+
+  .snowflake {
+    position: absolute;
+    top: -40px;
+    width: 30px;
+    height: 30px;
+    background-image: url('snowflake.png');
+    background-size: cover;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall linear infinite;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) translateX(var(--drift)) rotate(360deg);
+    }
+  }
+
+  audio {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+  }

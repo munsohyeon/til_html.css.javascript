@@ -71,19 +71,19 @@ $currLiList.forEach((item, idx) => {
 /*
 for (let i = 0; i < aboutCards.length; i++) {
   const card = aboutCards[i];
-
+  
   const $div = document.createElement("div"); // 새로운 div 생성
   $div.classList.add("about__card");
 
   const $img = document.createElement("img"); // 새로운 img 생성
   $img.classList.add("about_icon");
   $img.setAttribute("src", card.img);
-
+  
   const $h2 = document.createElement("h2"); // 새로운 h2 생성
   $h2.classList.add("about__title");
   $h2.classList.add("_" + (i + 1));
   $h2.textContent = card.title;
-
+  
   const $p = document.createElement("p");
   $p.classList.add("about__text");
 
@@ -91,12 +91,57 @@ for (let i = 0; i < aboutCards.length; i++) {
     const $word = document.createElement("div");
     $word.textContent = desc;
     $p.appendChild($word);
-  }
-
+    }
+    
   $div.appendChild($img);
   $div.appendChild($h2);
   $div.appendChild($p);
-
+  
   $aboutDiv.appendChild($div);
-}
+  }
 */
+
+// const $contactTabs = document.querySelectorAll('#ct_1, #ct_2');//
+const $contactTabs = document.querySelectorAll(
+  '#contact input[name="contact"]'
+);
+console.log($contactTabs);
+const $contactSlideCon = document.querySelector("#contact .contact__slide-con");
+
+$contactTabs.forEach((item, idx) => {
+  const marginLeft = [0, "-100vw"][idx];
+  // [0,'-100vw'] : 배열을 생성
+  // [idx]: 위치를 호출
+  /* ^ 위에 코드 해석한거 ^
+  let marginLeft2;
+  if (idx === 0) {
+    marginLeft2 = 0;
+  } else if (idx === 1) {
+    marginLeft2 = '-100vw';
+  }
+  */
+
+  item.addEventListener("click", () => {
+    $contactSlideCon.style.marginLeft = marginLeft;
+  });
+});
+
+const $menuBtn = document.querySelector(
+  "header.header button.header__menu-btn"
+);
+const $headerNav = document.querySelector("header.header nav.header__nav");
+
+$menuBtn.addEventListener("click", (e) => {
+  // $menuBtn.classList.toggle('on'); 이벤트가 발생후 안 없어지기 때문에 사용 x
+  e.target.classList.toggle("on");
+  $headerNav.classList.toggle("active");
+
+  e.stopPropagation();
+  // 버블링중지
+});
+
+const $body = document.querySelector("body");
+$body.addEventListener("click", () => {
+  $menuBtn.classList.remove("on");
+  $headerNav.classList.remove("active");
+});

@@ -19,7 +19,7 @@ const myArr = {
     3: 40,
     4: 50,
     length: 5,
-    forEach: function(cb) {
+    forEach: function(cb) { // forEach는 void메소드
         for (let i = 0; i < this.length; i++){
             cb(this[i]/*아이템*/, i);
         }
